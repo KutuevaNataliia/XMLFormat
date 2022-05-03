@@ -37,6 +37,7 @@ public class SerializerXML {
                 throw new RuntimeException("Неправильно задана директория");
             }
             Element rootElement = document.createElement(root.getName());
+            rootElement.setAttribute("id", "88");
             document.appendChild(rootElement);
             File[] files = root.listFiles();
             if (files != null) {
